@@ -48,7 +48,6 @@ for config in configs:
     bots += [cp]
     prefixes += [cp.get("DB", "prefix")]
 
-
 if len(sys.argv) > 1:
     Config.set("URL", "dumps", sys.argv[1])
 excaliburlog("Dumping from %s" %(Config.get("URL", "dumps"),))
